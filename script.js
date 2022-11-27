@@ -1,7 +1,7 @@
 let numOrStr = prompt('input number or string');
-console.log(numOrStr)
+console.log(numOrStr);
 
-switch (numOrStr) {
+switch (numOrStr && numOrStr.trim() && Number.isNaN(numOrStr)) {
     case null:
         console.log('ви скасували');
         break;
